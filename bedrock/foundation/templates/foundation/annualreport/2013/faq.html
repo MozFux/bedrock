@@ -1,0 +1,80 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+{% extends "base-resp.html" %}
+
+{% add_lang_files "foundation/annualreport/2012/index" %}
+
+{% block page_title %}{{ _('The State of Mozilla: 2012 Annual Report') }} | {{ _('Frequently Asked Questions') }}{% endblock %}
+{% block body_id %}annual-2012-faq{% endblock %}
+
+{% block extrahead %}
+  {{ css('annual_2012') }}
+{% endblock %}
+
+{% block site_header %}
+  {% include 'foundation/annualreport/2012/includes/header.html' %}
+{% endblock %}
+
+{% block content %}
+  <main role="main">
+    <section class="content content-section content-section-alt">
+      <div class="copy-wrapper">
+        <header>
+          <h1>{{ _('Frequently Asked Questions') }}</h1>
+        </header>
+
+        <div class="copy">
+          <dl class="faq">
+            <dt>
+            {% trans %}
+              Question?
+            {% endtrans %}
+            </dt>
+            <dd>
+              <p>
+              {% trans %}
+                Answer.
+              {% endtrans %}
+              </p>
+            </dd>
+            <dt>
+            {% trans %}
+              Question?
+            {% endtrans %}
+            </dt>
+            <dd>
+              <p>
+              {% trans %}
+                Answer.
+              {% endtrans %}
+              </p>
+            </dd>
+            <dt>
+            {% trans %}
+              Question?
+            {% endtrans %}
+            </dt>
+            <dd>
+              <p>
+              {% trans %}
+                Answer.
+              {% endtrans %}
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% block email_form %}{% endblock %}
+
+{% block site_footer %}
+  {% with page='faq' %}
+    {% include 'foundation/annualreport/2013/includes/footer.html' %}
+  {% endwith %}
+  {{ super() }}
+{% endblock %}

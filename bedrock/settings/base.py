@@ -472,6 +472,10 @@ MINIFY_BUNDLES = {
             'css/base/mozilla-modal.less',
             'css/foundation/annual2012.less',
         ),
+        'annual_2013': (
+            'css/base/mozilla-modal.less',
+            'css/foundation/annual2013.less',
+        ),
         'partners': (
             'css/base/mozilla-modal.less',
             'css/libs/jquery.pageslide.css',
@@ -844,6 +848,10 @@ MINIFY_BUNDLES = {
         'annual_2012': (
             'js/base/mozilla-modal.js',
             'js/foundation/annual2012.js',
+        ),
+        'annual_2013': (
+            'js/base/mozilla-modal.js',
+            'js/foundation/annual2013.js',
         ),
         'logo-prototype': (
             'js/styleguide/logo-prototype/vendor/raf.polyfill.js',
